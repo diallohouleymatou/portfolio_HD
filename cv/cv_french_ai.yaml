@@ -1,0 +1,161 @@
+cv:
+  name: Cheikh Ahmed Tijani Traoré
+  location: Dakar, Sénégal
+  email: atidiane741@gmail.com
+  phone: "+221 78 170 61 84"
+  website: https://cheikh-tidiane-portfolio.vercel.app/
+  social_networks:
+    - network: LinkedIn
+      username: cheikh-tidiane01
+    - network: GitHub
+      username: traorecheikh
+
+  sections:
+    Résumé:
+      - >-
+        Directeur des Systèmes d'Information et consultant en transformation
+        digitale avec plus de 4 ans
+        d'expérience sur des systèmes métiers critiques, à l'intersection de
+        la structuration SI, des plateformes opérationnelles, de la donnée et
+        de l'IA appliquée.
+
+    Compétences clés:
+      - label: Transformation SI
+        details: gouvernance, digitalisation, documentation, reporting, conduite du changement
+      - label: ERP et opérations
+        details: transformations Odoo, flux logistiques et financiers, stratégie de migration, accompagnement utilisateur
+      - label: Data et IA appliquée
+        details: SQL, Pandas, scikit-learn, pipelines KPI, automatisation reporting, workflows IA pragmatiques
+      - label: Conseil et delivery
+        details: cadrage des besoins, communication parties prenantes, documentation technique, formation
+
+    Expérience:
+      - company: Compagnie Prestige Immobilier (CPI)
+        position: Directeur des Systèmes d'Information
+        location: Dakar, Sénégal
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - >-
+            Porte la structuration de la fonction SI et un programme de
+            transformation digitale, avec une responsabilité couvrant
+            gouvernance, sécurité, documentation et adoption.
+          - >-
+            Définit le socle Microsoft 365 + Odoo pour centraliser les
+            processus métier, la collaboration, la gestion documentaire et le
+            reporting de direction.
+          - >-
+            Cadre une feuille de route de 6 mois orientée redressement
+            opérationnel, traçabilité des flux, sauvegarde et conduite du
+            changement.
+
+      - company: LIC
+        position: Consultant produit, data et solutions
+        location: Dakar, Sénégal / Remote
+        start_date: 2025-08
+        end_date: present
+        highlights:
+          - >-
+            Intervient en parallèle sur le cadrage produit, l'analyse métier,
+            la documentation et l'alignement technico-commercial pour des
+            produits e-commerce et de gestion.
+
+      - company: G&G Professional Services
+        position: Consultant Technique et Data
+        location: Dakar, Sénégal
+        start_date: 2025-07
+        end_date: 2026-06
+        highlights:
+          - >-
+            A piloté des missions de digitalisation et d'évolution de systèmes
+            métiers en combinant cadrage, implémentation technique et
+            coordination opérationnelle multi-clients.
+          - >-
+            A livré des développements critiques pour EBS sur la logistique,
+            les achats, les ventes, la comptabilité, le CRM, le site web et le
+            parcours SAV mobile dans un périmètre de 6 dépôts et 30 routes.
+          - >-
+            A mené des migrations Odoo vers la v18 pour CDA et Sentech tout en
+            formant environ 100 utilisateurs sur les processus et la qualité de
+            la donnée.
+
+      - company: Teksi
+        position: Développeur full-stack freelance
+        location: Montréal, Canada / Remote
+        start_date: 2025-04
+        end_date: 2026-04
+        highlights:
+          - >-
+            A développé un Student Management Service avec Spring Boot,
+            Angular, Docker et DigitalOcean sur une architecture multi-tenant.
+
+    Formation:
+      - institution: Dakar Institute of Technology
+        area: Master en Intelligence Artificielle
+        date: 2026-03
+
+      - institution: Institut Supérieur d'Informatique
+        area: Licence en Génie Logiciel
+        end_date: 2025-09
+
+    Certifications professionnelles:
+      - >-
+        **DataCamp • AI Engineer for Developers Associate** : workflows ML
+        appliqués, intégration de modèles et implémentation IA pragmatique.
+      - >-
+        **Google/Coursera • Google AI Professional Certificate** : socle appliqué
+        en IA pour des contextes produit et opérationnels.
+      - >-
+        **Linux Foundation (LFD114) • Porting Software to RISC-V** : fondamentaux
+        de portabilité logicielle et rigueur systèmes.
+
+    Langues:
+      - label: Langues de travail
+        details: Français, anglais, wolof, pulaar (courant) ; arabe, espagnol (intermédiaire)
+
+design:
+  theme: classic
+  page:
+    size: us-letter
+    top_margin: 1.3cm
+    bottom_margin: 1.3cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
+    show_footer: false
+    show_top_note: false
+  colors:
+    name: rgb(12, 73, 122)
+    connections: rgb(12, 73, 122)
+    links: rgb(12, 73, 122)
+    section_titles: rgb(12, 73, 122)
+  header:
+    connections:
+      show_icons: true
+      separator: "|"
+  section_titles:
+    type: with_partial_line
+  typography:
+    alignment: left
+  sections:
+    show_time_spans_in: []
+  entries:
+    degree_width: 0cm
+    side_space: 0cm
+    space_between_columns: 0.15cm
+
+locale:
+  language: french
+  present: présent
+  month_abbreviations:
+    - janv
+    - févr
+    - mars
+    - avr
+    - mai
+    - juin
+    - juil
+    - août
+    - sept
+    - oct
+    - nov
+    - déc

@@ -1,0 +1,133 @@
+cv:
+  name: Cheikh Ahmed Tijani Traoré
+  location: Dakar, Senegal
+  email: atidiane741@gmail.com
+  phone: "+221 78 170 61 84"
+  website: https://cheikh-tidiane-portfolio.vercel.app/
+  social_networks:
+    - network: LinkedIn
+      username: cheikh-tidiane01
+    - network: GitHub
+      username: traorecheikh
+
+  sections:
+    Summary:
+      - >-
+        Information Systems Director and digital transformation consultant with
+        4 years of experience
+        structuring information systems, digitalizing business processes, and
+        delivering end-to-end solutions across Odoo, Microsoft 365, data, and
+        executive reporting.
+
+    Experience:
+      - company: Compagnie Prestige Immobilier (CPI)
+        position: Information Systems Director
+        location: Dakar, Senegal
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - >-
+            Leads the structuring of the IS function and a digital
+            transformation program covering governance, documentation,
+            security, and adoption.
+          - >-
+            Defines the Microsoft 365 + Odoo target stack to centralize
+            business workflows, collaboration, document management, and
+            executive reporting.
+          - >-
+            Drives a 6-month recovery roadmap focused on traceability, access
+            controls, backup, and change enablement.
+
+      - company: LIC
+        position: Product, Data & Solutions Consultant
+        location: Dakar, Senegal / Remote
+        start_date: 2025-08
+        end_date: present
+        highlights:
+          - >-
+            Continues part-time work on product scoping, business analysis,
+            documentation, and technical-commercial alignment for e-commerce
+            and business-management products.
+
+      - company: G&G Professional Services
+        position: Technical & Data Consultant
+        location: Dakar, Senegal
+        start_date: 2025-07
+        end_date: 2026-06
+        highlights:
+          - >-
+            Led digitalization, integration, and business-system evolution
+            missions for multiple clients, combining business scoping,
+            reporting, coordination, and technical execution.
+          - >-
+            Delivered critical EBS developments across logistics, purchasing,
+            sales, accounting, CRM, website, and mobile service flows in a
+            6-warehouse, 30-route environment.
+          - >-
+            Led Odoo v18 migration tracks and trained around 100 combined users
+            on logistics, purchasing, inventory, and data discipline.
+
+      - company: Teksi
+        position: Freelance Full-Stack Developer
+        location: Montreal, Canada / Remote
+        start_date: 2025-04
+        end_date: 2026-04
+        highlights:
+          - >-
+            Built a Student Management Service with Spring Boot, Angular,
+            Docker, and DigitalOcean on a multi-tenant architecture designed
+            for per-organization isolation.
+
+    Education:
+      - institution: Dakar Institute of Technology
+        area: Master's in Artificial Intelligence
+        date: 2026-03
+
+      - institution: Higher Institute of Computer Science (ISI)
+        area: Bachelor's in Software Engineering
+        end_date: 2025-09
+
+    Skills:
+      - label: Transformation & IS
+        details: IS governance, digitalization, document management, reporting, change enablement
+      - label: Development
+        details: Spring Boot, Angular, Vue 3, API design, multi-tenant architecture, Docker
+      - label: Data & Applied AI
+        details: SQL, Pandas, scikit-learn, KPI, reporting, Odoo/Vue dashboards
+      - label: Platforms
+        details: Odoo 18, Microsoft 365, PostgreSQL, DigitalOcean, Azure, Linux, CI/CD, Entra ID, Odoo.sh
+      - label: Languages
+        details: French, English, Wolof, Pulaar (fluent); Arabic, Spanish (intermediate)
+
+design:
+  theme: classic
+  page:
+    size: us-letter
+    top_margin: 1.3cm
+    bottom_margin: 1.3cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
+    show_footer: false
+    show_top_note: false
+  colors:
+    name: rgb(12, 73, 122)
+    connections: rgb(12, 73, 122)
+    links: rgb(12, 73, 122)
+    section_titles: rgb(12, 73, 122)
+  header:
+    connections:
+      show_icons: true
+      separator: "|"
+  section_titles:
+    type: with_partial_line
+  typography:
+    alignment: left
+  sections:
+    show_time_spans_in: []
+  entries:
+    degree_width: 0cm
+    side_space: 0cm
+    space_between_columns: 0.15cm
+
+locale:
+  language: english

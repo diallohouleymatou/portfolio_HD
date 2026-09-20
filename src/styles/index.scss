@@ -1,0 +1,120 @@
+:root {
+  --bg: #120c14;
+  --fg: #f6eef0;
+  --muted: #a893a0;
+  --accent: #e8849a;
+  --line: rgba(246, 238, 240, 0.14);
+  --glass: rgba(18, 12, 20, 0.6);
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+}
+
+:root[data-theme='light'] {
+  --bg: #fbf4f6;
+  --fg: #2a1c2b;
+  --muted: #6f5a6c;
+  --accent: #c2456b;
+  --line: rgba(42, 28, 43, 0.16);
+  --glass: rgba(251, 244, 246, 0.7);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Urbanist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+  padding: clamp(6rem, 18vh, 12rem) var(--gutter);
+  max-width: 78rem;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.display {
+  font-size: clamp(3.25rem, 10vw, 9rem);
+  line-height: 0.94;
+  letter-spacing: -0.035em;
+  font-weight: 900;
+  text-wrap: balance;
+}
+
+.title {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+.lead {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 44ch;
+  text-wrap: pretty;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

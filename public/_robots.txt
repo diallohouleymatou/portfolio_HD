@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://cheikh-tidiane-portfolio.vercel.app/sitemap.xml

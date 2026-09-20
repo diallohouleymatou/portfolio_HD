@@ -1,0 +1,143 @@
+cv:
+  name: Cheikh Ahmed Tijani Traoré
+  location: Dakar, Senegal
+  email: atidiane741@gmail.com
+  phone: "+221 78 170 61 84"
+  website: https://cheikh-tidiane-portfolio.vercel.app/
+  social_networks:
+    - network: LinkedIn
+      username: cheikh-tidiane01
+    - network: GitHub
+      username: traorecheikh
+
+  sections:
+    Summary:
+      - >-
+        Information Systems Director and software builder focused on pragmatic digital transformation,
+        operating systems, data workflows, and applied AI integration in
+        real-world business environments.
+
+    Experience:
+      - company: Compagnie Prestige Immobilier (CPI)
+        position: Information Systems Director
+        location: Dakar, Senegal
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - >-
+            Leads IS structuring and a transformation program across
+            governance, documentation, security, and adoption.
+          - >-
+            Defines the Microsoft 365 + Odoo stack for business workflows,
+            document control, collaboration, and executive reporting.
+          - >-
+            Executes a 6-month roadmap centered on traceability, controls,
+            backup, and change management.
+
+      - company: LIC
+        position: Product, Data & Solutions Consultant
+        location: Dakar, Senegal / Remote
+        start_date: 2025-08
+        end_date: present
+        highlights:
+          - >-
+            Translates user and business requirements into implementation-ready
+            product scopes for web/mobile commerce and operations products.
+
+      - company: G&G Professional Services
+        position: Technical & Data Consultant
+        location: Dakar, Senegal
+        start_date: 2025-07
+        end_date: 2026-06
+        highlights:
+          - >-
+            Built and evolved client business systems across logistics,
+            procurement, sales, accounting, and CRM domains in live
+            operational environments.
+          - >-
+            Delivered EBS workflow and reporting capabilities across 6
+            warehouses and 30 routes and led Odoo v18 upgrade streams with user
+            training.
+
+      - company: Teksi
+        position: Freelance Full-Stack Developer
+        location: Montreal, Canada / Remote
+        start_date: 2025-04
+        end_date: 2026-04
+        highlights:
+          - >-
+            Built a Student Management Service with Spring Boot and Angular on
+            a multi-tenant model, deployed with Docker on DigitalOcean.
+
+    Applied AI & Systems Projects:
+      - >-
+        Built data and KPI workflows for ERP and business operations contexts,
+        using SQL/Pandas pipelines and dashboard-oriented outputs.
+      - >-
+        Delivered architecture decisions balancing business constraints,
+        maintainability, and deployment speed across transformation contexts.
+
+    Technical Stack:
+      - label: IS & Platform
+        details: Microsoft 365, Odoo 18, PostgreSQL, Docker, Linux, DigitalOcean, CI/CD
+      - label: Backend & Data
+        details: Spring Boot, SQL, Pandas, scikit-learn, API design
+      - label: Product & Delivery
+        details: requirements framing, technical documentation, stakeholder communication, user training
+
+    Education:
+      - institution: Dakar Institute of Technology
+        area: Master's in Artificial Intelligence
+        date: 2026-03
+
+      - institution: Higher Institute of Computer Science (ISI)
+        area: Bachelor's in Software Engineering
+        end_date: 2025-09
+
+    Professional Certifications:
+      - >-
+        **DataCamp • AI Engineer for Developers Associate**: practical model and
+        workflow integration for application contexts.
+      - >-
+        **Google/Coursera • Google AI Professional Certificate**: broad applied AI
+        concepts for product-level implementation.
+      - >-
+        **Linux Foundation (LFD114) • Porting Software to RISC-V**: systems-level
+        rigor relevant to software portability and architecture thinking.
+
+    Languages:
+      - label: Spoken Languages
+        details: French, English, Wolof, Pulaar (fluent); Arabic, Spanish (intermediate)
+
+design:
+  theme: classic
+  page:
+    size: us-letter
+    top_margin: 1.3cm
+    bottom_margin: 1.3cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
+    show_footer: false
+    show_top_note: false
+  colors:
+    name: rgb(12, 73, 122)
+    connections: rgb(12, 73, 122)
+    links: rgb(12, 73, 122)
+    section_titles: rgb(12, 73, 122)
+  header:
+    connections:
+      show_icons: true
+      separator: "|"
+  section_titles:
+    type: with_partial_line
+  typography:
+    alignment: left
+  sections:
+    show_time_spans_in: []
+  entries:
+    degree_width: 0cm
+    side_space: 0cm
+    space_between_columns: 0.15cm
+
+locale:
+  language: english

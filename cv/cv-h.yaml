@@ -1,0 +1,155 @@
+cv:
+  name: Houleymatou Diallo
+  location: Dakar, Sénégal
+  email: dhouleymatou150@gmail.com
+  phone: "+221 78 277 55 79"
+  website: http://houleyma-diallo-portfolio.vercel.app/
+  social_networks:
+    - network: LinkedIn
+      username: houleymatou-diallo-ba76782b7
+    - network: GitHub
+      username: diallohouleymatou
+
+  sections:
+    Résumé:
+      - >-
+        Développeuse full-stack et conceptrice de logiciels, spécialisée dans
+        l’analyse des besoins métier, la conception de solutions applicatives
+        fiables et l’évolution de systèmes à fort enjeu opérationnel.
+        J’interviens sur l’ensemble du cycle de développement, de la conception
+        à la mise en production, avec une approche structurée, orientée qualité,
+        sécurité et performance.
+
+    Expérience:
+      - company: SIMEN
+        position: Agente développeuse full-stack
+        location: Dakar, Sénégal
+        start_date: 2026-02
+        end_date: present
+        highlights:
+          - >-
+            Développe et fait évoluer des applications métiers au sein du
+            Système d’Information et de Management de l’Éducation Nationale,
+            dans le cadre d’un poste full-time en CDD.
+          - >-
+            Contribue à la modernisation des systèmes existants en appliquant
+            les bonnes pratiques de développement, de structuration technique et
+            d’amélioration continue.
+
+      - company: Stellar Consulting
+        position: Consultante informatique
+        location: Dakar, Sénégal
+        start_date: 2025-11
+        end_date: 2026-01
+        highlights:
+          - >-
+            A développé et personnalisé des solutions Odoo adaptées aux besoins
+            métiers des clients.
+          - >-
+            A supervisé l’infrastructure informatique et optimisé les usages des
+            outils Microsoft 365.
+
+      - company: SIMEN
+        position: Développeuse de logiciels
+        location: Dakar, Sénégal
+        start_date: 2025-10
+        end_date: 2025-11
+        highlights:
+          - >-
+            A participé à la conception et à l’implémentation de solutions
+            full-stack destinées à la modernisation de systèmes existants.
+
+      - company: Megatic
+        position: Développeuse de logiciels
+        location: Remote / Dakar, Sénégal
+        start_date: 2025-11
+        end_date: present
+        highlights:
+          - >-
+            Participe au développement d’une application de gestion scolaire
+            couvrant les classes, élèves, enseignants, notes et bulletins.
+          - >-
+            Collabore à distance avec l’équipe sur l’implémentation de
+            fonctionnalités, les tests et l’amélioration de l’expérience
+            utilisateur.
+
+    Formation:
+      - institution: Dakar Institute of Technology
+        area: Master en Intelligence Artificielle
+        start_date: 2026-03
+        end_date: present
+
+      - institution: Institut Supérieur d'Informatique
+        area: Licence en Génie Logiciel
+        start_date: 2023-01
+        end_date: 2025-09
+
+    Compétences:
+      - label: Développement applicatif
+        details: Python, Flask, Flutter, Laravel, Angular, Node.js, Java, React, Odoo
+      - label: Architecture & qualité logicielle
+        details: analyse des besoins, conception applicative, API, sécurité, bonnes pratiques de développement, tests
+      - label: DevOps & systèmes
+        details: Docker, Terraform, Git, Azure, Linux, Jenkins, GitLab, CI/CD
+      - label: Data & IA appliquée
+        details: Pandas, NumPy, SQL, reporting, tableaux de bord, analyse de données
+      - label: Méthodes & gestion de projet
+        details: Trello, Kanban, Teams, UML, travail en équipe, documentation technique
+      - label: Langues
+        details: Pulaar (langue maternelle), français (C1/C2), anglais (B1/B2)
+
+    Prix et distinctions:
+      - >-
+        Certificat d’excellence – Institut Supérieur d’Informatique, obtenu
+        pour des performances académiques remarquables en Licence 3 Génie
+        Logiciel.
+
+    Centres d’intérêt:
+      - Cuisine, voyage, lecture
+
+design:
+  theme: classic
+  page:
+    size: us-letter
+    top_margin: 1.3cm
+    bottom_margin: 1.3cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
+    show_footer: false
+    show_top_note: false
+  colors:
+    name: rgb(12, 73, 122)
+    connections: rgb(12, 73, 122)
+    links: rgb(12, 73, 122)
+    section_titles: rgb(12, 73, 122)
+  header:
+    connections:
+      show_icons: true
+      separator: "|"
+  section_titles:
+    type: with_partial_line
+  typography:
+    alignment: left
+  sections:
+    show_time_spans_in: []
+  entries:
+    degree_width: 0cm
+    side_space: 0cm
+    space_between_columns: 0.15cm
+
+locale:
+  language: french
+  present: présent
+  month_abbreviations:
+    - janv
+    - févr
+    - mars
+    - avr
+    - mai
+    - juin
+    - juil
+    - août
+    - sept
+    - oct
+    - nov
+    - déc

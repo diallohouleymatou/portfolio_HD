@@ -1,0 +1,153 @@
+cv:
+  name: Cheikh Ahmed Tijani Traoré
+  location: Dakar, Sénégal
+  email: atidiane741@gmail.com
+  phone: "+221 78 170 61 84"
+  website: https://cheikh-tidiane-portfolio.vercel.app/
+  social_networks:
+    - network: LinkedIn
+      username: cheikh-tidiane01
+    - network: GitHub
+      username: traorecheikh
+
+  sections:
+    Résumé:
+      - >-
+        Directeur des Systèmes d'Information avec 4 ans d'expérience en
+        digitalisation métier, Odoo, Microsoft 365, donnée et reporting.
+
+    Expérience:
+      - company: Compagnie Prestige Immobilier (CPI)
+        position: Directeur des Systèmes d'Information
+        location: Dakar, Sénégal
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - >-
+            Pilote la structuration de la fonction SI et un programme de
+            transformation digitale couvrant gouvernance, documentation,
+            sécurité et adoption.
+          - >-
+            Contribue à la digitalisation de CPI CHUES, programme immobilier
+            pour enseignants du Sénégal, avec un travail sur clarté des
+            parcours et lisibilité de l'offre.
+          - >-
+            Définit le socle Microsoft 365 + Odoo pour centraliser processus
+            métier, collaboration, gestion documentaire et reporting.
+          - >-
+            Cadre une feuille de route de 6 mois centrée sur traçabilité,
+            contrôles d'accès, sauvegarde et conduite du changement.
+
+      - company: LIC
+        position: Consultant produit, data & solutions
+        location: Dakar, Sénégal / Remote
+        start_date: 2025-08
+        end_date: present
+        highlights:
+          - >-
+            Intervient en parallèle sur cadrage produit, analyse métier,
+            documentation et articulation technico-commerciale.
+
+      - company: G&G Professional Services
+        position: Consultant Technique & Data
+        location: Dakar, Sénégal
+        start_date: 2025-07
+        end_date: 2026-06
+        highlights:
+          - >-
+            A piloté des missions de digitalisation et d'évolution de systèmes
+            métiers, en combinant cadrage, reporting, coordination et
+            exécution technique.
+          - >-
+            A mené pour EBS des développements critiques sur logistique,
+            achats, ventes, comptabilité, CRM, site web et SAV mobile dans un
+            contexte de 6 dépôts et 30 routes.
+          - >-
+            A conduit des migrations Odoo v18 et formé environ 100
+            utilisateurs sur logistique, achats, stock et qualité de donnée.
+
+      - company: Teksi
+        position: Développeur full-stack freelance
+        location: Montréal, Canada / Remote
+        start_date: 2025-04
+        end_date: 2026-04
+        highlights:
+          - >-
+            A développé un Student Management Service avec Spring Boot,
+            Angular, Docker et DigitalOcean sur une architecture multi-tenant.
+
+    Formation:
+      - institution: Dakar Institute of Technology
+        area: Master en Intelligence Artificielle
+        date: 2026-03
+
+      - institution: Institut Supérieur d'Informatique
+        area: Licence en Génie Logiciel
+        end_date: 2025-09
+
+    Certifications:
+      - >-
+        DataCamp - AI Engineer for Developers Associate
+      - >-
+        Google/Coursera - Google AI Professional Certificate
+      - >-
+        Linux Foundation (LFD114) - Porting Software to RISC-V
+
+    Compétences:
+      - label: Transformation & SI
+        details: gouvernance SI, digitalisation, documentation, reporting, conduite du changement
+      - label: Développement
+        details: Spring Boot, Angular, API design, multi-tenant, Docker
+      - label: Data & IA appliquée
+        details: SQL, Pandas, scikit-learn, KPI, reporting
+      - label: Plateformes
+        details: Odoo 18, Microsoft 365, PostgreSQL, Azure, Linux, CI/CD
+      - label: Langues
+        details: Français, anglais, wolof, pulaar ; arabe, espagnol
+
+design:
+  theme: classic
+  page:
+    size: us-letter
+    top_margin: 1.3cm
+    bottom_margin: 1.3cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
+    show_footer: false
+    show_top_note: false
+  colors:
+    name: rgb(12, 73, 122)
+    connections: rgb(12, 73, 122)
+    links: rgb(12, 73, 122)
+    section_titles: rgb(12, 73, 122)
+  header:
+    connections:
+      show_icons: true
+      separator: "|"
+  section_titles:
+    type: with_partial_line
+  typography:
+    alignment: left
+  sections:
+    show_time_spans_in: []
+  entries:
+    degree_width: 0cm
+    side_space: 0cm
+    space_between_columns: 0.15cm
+
+locale:
+  language: french
+  present: présent
+  month_abbreviations:
+    - janv
+    - févr
+    - mars
+    - avr
+    - mai
+    - juin
+    - juil
+    - août
+    - sept
+    - oct
+    - nov
+    - déc
