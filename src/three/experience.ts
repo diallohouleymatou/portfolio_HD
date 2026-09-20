@@ -10,7 +10,7 @@ const LAVENDER = new THREE.Color()
 export type Theme = 'dark' | 'light'
 
 const THEMES = {
-  dark: { pink: '#ff9ec0', lavender: '#b9a4f0', blending: THREE.AdditiveBlending },
+  dark: { pink: '#ff9ec0', lavender: '#b9a4f0', blending: THREE.NormalBlending },
   light: { pink: '#ff8fb8', lavender: '#b39cf5', blending: THREE.NormalBlending },
 }
 
@@ -51,7 +51,7 @@ export function createExperience(canvas: HTMLCanvasElement) {
   const particleUniforms = {
     uTime: { value: 0 },
     uPixelRatio: { value: 1 },
-    uSize: { value: 26 },
+    uSize: { value: 14 },
     uColor: { value: PINK },
     uColor2: { value: LAVENDER },
   }

@@ -108,7 +108,6 @@ onBeforeUnmount(() => {
   padding: 0.35rem;
   border-radius: 999px;
   background: var(--glass);
-  backdrop-filter: blur(12px);
   box-shadow: var(--shadow);
 
   a {
@@ -147,8 +146,7 @@ onBeforeUnmount(() => {
     border: 0;
     border-radius: 999px;
     background: var(--glass);
-    backdrop-filter: blur(12px);
-    box-shadow: var(--shadow);
+      box-shadow: var(--shadow);
     color: var(--fg);
     font: 800 0.85rem var(--font-body);
     letter-spacing: 0.1em;
