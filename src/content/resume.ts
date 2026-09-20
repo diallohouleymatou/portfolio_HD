@@ -148,24 +148,24 @@ const FR: Copy = {
   ],
   projects: [
     {
-      name: 'RAMATU',
-      description: 'Plateforme institutionnelle e-learning pour la gestion et le suivi de la formation éducative.',
-      tech: ['E-learning', 'Architecture', 'Gestion de projet'],
+      name: 'SIREN-ED',
+      description: 'Plateforme de signalement et de suivi d\'événements (Système d\'Information) avec navigation multi-vues et cartographie.',
+      tech: ['Vue 3', 'Tailwind CSS', 'Vite', 'Vue Router'],
     },
     {
-      name: 'Siren-ED',
-      description: 'Système d\'information (Frontend et Backend) pour l\'Éducation Nationale, avec intégration d\'authentification Azure MSAL.',
-      tech: ['Vue.js', 'TailwindCSS', 'Azure'],
+      name: 'Plateforme de Questionnaires (EduStat)',
+      description: 'Preuve de concept d\'une plateforme souveraine de collecte de données statistiques pour le Ministère (DPTIC) intégrant un concepteur de formulaires no-code.',
+      tech: ['React 18', 'SurveyJS', 'ASP.NET Core 8', 'SQL Server'],
     },
     {
-      name: 'EduStat',
-      description: 'Application web et mobile de statistiques et d\'analyse des données de l\'éducation.',
-      tech: ['Vue.js', 'Mobile', 'Data'],
+      name: 'Gestion Salles MEN',
+      description: 'Application de planification et de gestion des salles de réunion avec authentification SSO (OpenID Connect).',
+      tech: ['Vue 3', 'TypeScript', 'Pinia', 'MongoDB'],
     },
     {
       name: 'Agile Dashboard',
-      description: 'Tableau de bord de suivi agile couplé à une API dédiée pour le pilotage des projets internes.',
-      tech: ['Frontend', 'API REST', 'Dashboard'],
+      description: 'Prototype de tableau de bord agile (style tableau blanc Microsoft) avec graphiques intégrés pour le suivi de sprints.',
+      tech: ['Vue 3', 'Chart.js', 'Pinia', 'Lucide'],
     },
   ],
   education: [
@@ -255,24 +255,24 @@ const EN: Copy = {
   ],
   projects: [
     {
-      name: 'RAMATU',
-      description: 'Institutional e-learning platform for managing and monitoring educational training.',
-      tech: ['E-learning', 'Architecture', 'Project Management'],
+      name: 'SIREN-ED',
+      description: 'Event reporting and tracking platform (Information System) featuring multi-view navigation and mapping.',
+      tech: ['Vue 3', 'Tailwind CSS', 'Vite', 'Vue Router'],
     },
     {
-      name: 'Siren-ED',
-      description: 'Information system (Frontend and Backend) for the National Education Ministry, featuring Azure MSAL authentication.',
-      tech: ['Vue.js', 'TailwindCSS', 'Azure'],
+      name: 'Questionnaire Platform (EduStat)',
+      description: 'Proof of concept for a sovereign statistical data collection platform for the Ministry (DPTIC), integrating a no-code form builder.',
+      tech: ['React 18', 'SurveyJS', 'ASP.NET Core 8', 'SQL Server'],
     },
     {
-      name: 'EduStat',
-      description: 'Web and mobile application for education data statistics and analysis.',
-      tech: ['Vue.js', 'Mobile', 'Data'],
+      name: 'MEN Meeting Rooms',
+      description: 'Meeting room planning and management application featuring SSO authentication (OpenID Connect).',
+      tech: ['Vue 3', 'TypeScript', 'Pinia', 'MongoDB'],
     },
     {
       name: 'Agile Dashboard',
-      description: 'Agile tracking dashboard coupled with a dedicated API for internal project management.',
-      tech: ['Frontend', 'REST API', 'Dashboard'],
+      description: 'Agile dashboard prototype (Microsoft Whiteboard style) with integrated charts for sprint tracking.',
+      tech: ['Vue 3', 'Chart.js', 'Pinia', 'Lucide'],
     },
   ],
   education: [
