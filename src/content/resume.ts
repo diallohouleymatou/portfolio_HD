@@ -186,6 +186,11 @@ const FR: Copy = {
       description: 'Tableau de bord interactif de production pour le pilotage des projets de la DSI. Inspiré du format tableau blanc, il offre un suivi précis par Sprint et par User Story avec des indicateurs visuels avancés et des graphiques intégrés.',
       tech: ['Vue 3', 'Chart.js', 'Pinia', 'Lucide'],
     },
+    {
+      name: 'GS-Académie (Megatic)',
+      description: 'Application web de gestion scolaire complète. Intègre la gestion administrative, la facturation avec passerelle de paiement en ligne (PayDunya), un module d\'envoi de notifications SMS et un portail dédié sécurisé pour les parents/tuteurs.',
+      tech: ['PHP (CodeIgniter)', 'MySQL', 'PayDunya API', 'AJAX'],
+    },
   ],
   certifications: [
     {
@@ -323,6 +328,11 @@ const EN: Copy = {
       name: 'Agile Dashboard',
       description: 'Interactive production dashboard for IT project management. Inspired by whiteboard formats, it provides precise tracking per Sprint and User Story with advanced visual indicators and embedded charts.',
       tech: ['Vue 3', 'Chart.js', 'Pinia', 'Lucide'],
+    },
+    {
+      name: 'GS-Académie (Megatic)',
+      description: 'Comprehensive web-based school management application. Features administrative workflows, student billing with online payment gateway (PayDunya), an SMS notification module, and a secure portal for parents/guardians.',
+      tech: ['PHP (CodeIgniter)', 'MySQL', 'PayDunya API', 'AJAX'],
     },
   ],
   certifications: [
