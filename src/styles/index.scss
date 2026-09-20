@@ -1,20 +1,32 @@
 :root {
-  --bg: #120c14;
-  --fg: #f6eef0;
-  --muted: #a893a0;
-  --accent: #e8849a;
-  --line: rgba(246, 238, 240, 0.14);
-  --glass: rgba(18, 12, 20, 0.6);
+  --bg: linear-gradient(160deg, #1d1222, #261a36 55%, #2c1c28);
+  --fg: #fbeff5;
+  --muted: #c3aabb;
+  --accent: #ff9ec0;
+  --on-accent: #2a1230;
+  --ribbon-bg: #b9a4f0;
+  --ribbon-fg: #241338;
+  --card: rgba(255, 255, 255, 0.07);
+  --line: rgba(251, 239, 245, 0.16);
+  --glass: rgba(29, 18, 34, 0.7);
+  --shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.28);
+  --font-display: 'Fredoka', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --gutter: clamp(1.25rem, 5vw, 5rem);
 }
 
 :root[data-theme='light'] {
-  --bg: #fbf4f6;
-  --fg: #2a1c2b;
-  --muted: #6f5a6c;
-  --accent: #c2456b;
-  --line: rgba(42, 28, 43, 0.16);
-  --glass: rgba(251, 244, 246, 0.7);
+  --bg: linear-gradient(160deg, #fff1f5, #f4ebff 55%, #ffece0);
+  --fg: #4a2a44;
+  --muted: #7d5f78;
+  --accent: #d13a7c;
+  --on-accent: #fff;
+  --ribbon-bg: #6d51d6;
+  --ribbon-fg: #fff;
+  --card: rgba(255, 255, 255, 0.72);
+  --line: rgba(74, 42, 68, 0.12);
+  --glass: rgba(255, 245, 248, 0.8);
+  --shadow: 0 1.5rem 3rem rgba(209, 58, 124, 0.14);
 }
 
 *,
@@ -30,9 +42,9 @@ html {
 }
 
 body {
-  background: var(--bg);
+  background: var(--bg) fixed;
   color: var(--fg);
-  font-family: 'Urbanist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-family: var(--font-body);
   font-synthesis-weight: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -68,26 +80,28 @@ img {
 }
 
 .eyebrow {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 0.9rem;
-  letter-spacing: 0.22em;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
 .display {
   font-size: clamp(3.25rem, 10vw, 9rem);
-  line-height: 0.94;
-  letter-spacing: -0.035em;
-  font-weight: 900;
+  line-height: 1;
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  font-weight: 600;
   text-wrap: balance;
 }
 
 .title {
   font-size: clamp(2.25rem, 5vw, 4rem);
   line-height: 1.05;
-  letter-spacing: -0.03em;
-  font-weight: 800;
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  font-weight: 600;
 }
 
 .lead {

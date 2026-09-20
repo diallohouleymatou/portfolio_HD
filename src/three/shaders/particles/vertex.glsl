@@ -6,6 +6,7 @@ attribute float aScale;
 attribute float aSpeed;
 
 varying float vAlpha;
+varying float vMix;
 
 void main() {
   vec3 transformed = position;
@@ -18,4 +19,5 @@ void main() {
   gl_PointSize = uSize * aScale * uPixelRatio * (12.0 / -mvPosition.z);
 
   vAlpha = smoothstep(12.0, 3.0, abs(transformed.y)) * aScale;
+  vMix = fract(aScale * 7.0);
 }

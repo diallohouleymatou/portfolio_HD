@@ -48,7 +48,7 @@ onMounted(() => {
   experience.value = createExperience(canvas.value)
   applyTheme()
 
-  const instance = new Lenis({ autoRaf: true, lerp: 0.1 })
+  const instance = new Lenis({ autoRaf: true, lerp: 0.1, anchors: true })
   instance.on('scroll', ({ progress }: { progress: number }) => experience.value?.setScroll(progress))
   lenis.value = instance
 
@@ -75,6 +75,13 @@ onBeforeUnmount(() => {
 <template>
   <canvas ref="canvas" class="canvas" />
 
+  <nav class="nav">
+    <a href="#about">{{ resume.ui.about }}</a>
+    <a href="#work">{{ resume.ui.work }}</a>
+    <a href="#skills">{{ resume.ui.skills }}</a>
+    <a href="#contact">{{ resume.ui.contact }}</a>
+  </nav>
+
   <div class="controls">
     <button type="button" :aria-label="theme === 'dark' ? 'Light mode' : 'Dark mode'" @click="toggleTheme">
       {{ theme === 'dark' ? '☀' : '☾' }}
@@ -90,6 +97,43 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped lang="scss">
+.nav {
+  position: fixed;
+  top: clamp(1rem, 3vw, 2rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
+
+  a {
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    color: var(--fg);
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: var(--card);
+    }
+  }
+}
+
+@media (max-width: 52rem) {
+  .nav {
+    display: none;
+  }
+}
+
 .controls {
   position: fixed;
   top: clamp(1rem, 3vw, 2rem);
@@ -99,21 +143,21 @@ onBeforeUnmount(() => {
   gap: 0.5rem;
 
   button {
-    padding: 0.5rem 0.9rem;
-    border: 1px solid var(--line);
+    padding: 0.6rem 1rem;
+    border: 0;
     border-radius: 999px;
     background: var(--glass);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow);
     color: var(--fg);
-    font-family: 'JetBrains Mono', ui-monospace, monospace;
-    font-size: 0.85rem;
-    letter-spacing: 0.14em;
+    font: 800 0.85rem var(--font-body);
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     cursor: pointer;
-    transition: border-color 0.3s ease;
+    transition: transform 0.3s ease;
 
     &:hover {
-      border-color: var(--accent);
+      transform: translateY(-2px);
     }
   }
 }

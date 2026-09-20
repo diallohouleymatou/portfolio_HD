@@ -94,9 +94,18 @@ defineProps<{ resume: Resume }>()
 }
 
 .role {
-  font-size: clamp(1.35rem, 3vw, 2.25rem);
-  font-weight: 700;
-  color: var(--accent);
+  align-self: flex-start;
+  padding: 0.5rem 1.4rem;
+  border-radius: 0.6rem;
+  background: var(--ribbon-bg);
+  color: var(--ribbon-fg);
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.4vw, 1.75rem);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  rotate: -2deg;
+  box-shadow: var(--shadow);
 }
 
 .actions {
@@ -109,9 +118,10 @@ defineProps<{ resume: Resume }>()
 .button {
   padding: 0.85rem 1.6rem;
   border-radius: 999px;
-  background: var(--fg);
-  color: var(--bg);
-  font-weight: 700;
+  background: var(--accent);
+  color: var(--on-accent);
+  box-shadow: var(--shadow);
+  font-weight: 800;
   font-size: 1.15rem;
   text-decoration: none;
   transition: transform 0.3s ease;
@@ -121,9 +131,9 @@ defineProps<{ resume: Resume }>()
   }
 
   &.ghost {
-    background: transparent;
+    background: var(--card);
     color: var(--fg);
-    border: 1px solid var(--line);
+    box-shadow: none;
   }
 }
 
@@ -140,9 +150,12 @@ defineProps<{ resume: Resume }>()
   gap: 2.5rem;
 }
 
-.job {
-  border-top: 1px solid var(--line);
-  padding-top: 1.5rem;
+.job,
+.certs li {
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  border-radius: 2rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
 }
 
 .job-head {
@@ -153,8 +166,9 @@ defineProps<{ resume: Resume }>()
   gap: 0.5rem;
 
   h3 {
+    font-family: var(--font-display);
     font-size: clamp(1.35rem, 2.6vw, 2rem);
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 
@@ -162,9 +176,9 @@ defineProps<{ resume: Resume }>()
   margin-left: 0.6rem;
   padding: 0.15rem 0.6rem;
   border-radius: 999px;
-  background: rgba(232, 132, 154, 0.16);
-  color: var(--accent);
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  background: var(--ribbon-bg);
+  color: var(--ribbon-fg);
+  font-weight: 800;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -175,6 +189,7 @@ defineProps<{ resume: Resume }>()
   margin-top: 0.35rem;
   color: var(--accent);
   font-size: 1.15rem;
+  font-weight: 800;
 }
 
 .highlights {
@@ -189,9 +204,8 @@ defineProps<{ resume: Resume }>()
 }
 
 .meta {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-size: 0.95rem;
   color: var(--muted);
   display: flex;
   gap: 1.25rem;
@@ -210,14 +224,15 @@ defineProps<{ resume: Resume }>()
     align-items: center;
     gap: 0.6rem;
     padding: 0.6rem 1.1rem 0.6rem 0.9rem;
-    border: 1px solid var(--line);
     border-radius: 999px;
+    background: var(--card);
+    box-shadow: var(--shadow);
     font-size: 1.05rem;
-    font-weight: 700;
-    transition: border-color 0.3s ease;
+    font-weight: 800;
+    transition: transform 0.3s ease;
 
     &:hover {
-      border-color: var(--accent);
+      transform: translateY(-3px) rotate(-1.5deg);
     }
   }
 
@@ -238,14 +253,10 @@ defineProps<{ resume: Resume }>()
   display: grid;
   gap: 1.5rem;
 
-  li {
-    border-top: 1px solid var(--line);
-    padding-top: 1rem;
-  }
-
   h3 {
+    font-family: var(--font-display);
     font-size: 1.35rem;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .meta {
@@ -263,10 +274,11 @@ defineProps<{ resume: Resume }>()
 
 .mail {
   font-size: clamp(1.35rem, 4vw, 2.75rem);
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 600;
   color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 3px solid currentColor;
   align-self: flex-start;
 }
 </style>

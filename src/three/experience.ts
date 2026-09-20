@@ -1,19 +1,17 @@
 import * as THREE from 'three'
 
-import gridFragment from './shaders/grid-floor/fragment.glsl'
-import gridVertex from './shaders/grid-floor/vertex.glsl'
 import particlesFragment from './shaders/particles/fragment.glsl'
 import particlesVertex from './shaders/particles/vertex.glsl'
 
-const PARTICLE_COUNT = 900
-const ACCENT = new THREE.Color()
-const GRID = new THREE.Color()
+const PARTICLE_COUNT = 90
+const PINK = new THREE.Color()
+const LAVENDER = new THREE.Color()
 
 export type Theme = 'dark' | 'light'
 
 const THEMES = {
-  dark: { bg: '#120c14', accent: '#e8849a', grid: '#9a7a94', blending: THREE.AdditiveBlending },
-  light: { bg: '#fbf4f6', accent: '#c2456b', grid: '#a86b93', blending: THREE.NormalBlending },
+  dark: { pink: '#ff9ec0', lavender: '#b9a4f0', blending: THREE.AdditiveBlending },
+  light: { pink: '#ff8fb8', lavender: '#b39cf5', blending: THREE.NormalBlending },
 }
 
 /** Camera positions the scroll interpolates between, one per page section. */
@@ -29,30 +27,11 @@ const FIRST = WAYPOINTS[0]!
 
 export function createExperience(canvas: HTMLCanvasElement) {
   const scene = new THREE.Scene()
-  scene.fog = new THREE.FogExp2(THEMES.dark.bg, 0.035)
 
   const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100)
   camera.position.copy(FIRST.position)
 
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false })
-  renderer.setClearColor(THEMES.dark.bg)
-
-  const gridUniforms = {
-    uTime: { value: 0 },
-    uProgress: { value: 0 },
-    uColor: { value: GRID },
-    uSize: { value: 1.1 },
-  }
-  const gridMaterial = new THREE.ShaderMaterial({
-    vertexShader: gridVertex,
-    fragmentShader: gridFragment,
-    transparent: true,
-    depthWrite: false,
-    uniforms: gridUniforms,
-  })
-  const floor = new THREE.Mesh(new THREE.PlaneGeometry(80, 80), gridMaterial)
-  floor.rotation.x = -Math.PI / 2
-  scene.add(floor)
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true })
 
   const positions = new Float32Array(PARTICLE_COUNT * 3)
   const scales = new Float32Array(PARTICLE_COUNT)
@@ -72,8 +51,9 @@ export function createExperience(canvas: HTMLCanvasElement) {
   const particleUniforms = {
     uTime: { value: 0 },
     uPixelRatio: { value: 1 },
-    uSize: { value: 7 },
-    uColor: { value: ACCENT },
+    uSize: { value: 26 },
+    uColor: { value: PINK },
+    uColor2: { value: LAVENDER },
   }
   const particleMaterial = new THREE.ShaderMaterial({
     vertexShader: particlesVertex,
@@ -129,8 +109,6 @@ export function createExperience(canvas: HTMLCanvasElement) {
     const elapsed = clock.getElapsedTime()
 
     smoothScroll += (scroll - smoothScroll) * 0.08
-    gridUniforms.uTime.value = elapsed
-    gridUniforms.uProgress.value = 0.4 + smoothScroll * 0.6
     particleUniforms.uTime.value = elapsed
 
     applyWaypoints(smoothScroll)
@@ -144,11 +122,9 @@ export function createExperience(canvas: HTMLCanvasElement) {
 
   return {
     setTheme(theme: Theme) {
-      const { bg, accent, grid, blending } = THEMES[theme]
-      ;(scene.fog as THREE.FogExp2).color.set(bg)
-      renderer.setClearColor(bg)
-      ACCENT.set(accent)
-      GRID.set(grid)
+      const { pink, lavender, blending } = THEMES[theme]
+      PINK.set(pink)
+      LAVENDER.set(lavender)
       particleMaterial.blending = blending
       particleMaterial.needsUpdate = true
     },
@@ -161,8 +137,6 @@ export function createExperience(canvas: HTMLCanvasElement) {
       window.removeEventListener('pointermove', onPointerMove)
       particleGeometry.dispose()
       particleMaterial.dispose()
-      floor.geometry.dispose()
-      gridMaterial.dispose()
       renderer.dispose()
     },
   }
