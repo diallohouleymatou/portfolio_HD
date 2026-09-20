@@ -188,7 +188,7 @@ const FR: Copy = {
     },
     {
       name: 'GS-Académie (Megatic)',
-      description: 'Application web de gestion scolaire complète. Intègre la gestion administrative, la facturation avec passerelle de paiement en ligne (PayDunya), un module d\'envoi de notifications SMS et un portail dédié sécurisé pour les parents/tuteurs.',
+      description: 'Application web de gestion scolaire développée pour l\'entreprise Megatic. Intègre la gestion administrative, la facturation avec passerelle de paiement en ligne (PayDunya), un module d\'envoi de notifications SMS et un portail dédié sécurisé pour les parents/tuteurs.',
       tech: ['PHP (CodeIgniter)', 'MySQL', 'PayDunya API', 'AJAX'],
     },
   ],
@@ -331,7 +331,7 @@ const EN: Copy = {
     },
     {
       name: 'GS-Académie (Megatic)',
-      description: 'Comprehensive web-based school management application. Features administrative workflows, student billing with online payment gateway (PayDunya), an SMS notification module, and a secure portal for parents/guardians.',
+      description: 'Web-based school management application developed for the company Megatic. Features administrative workflows, student billing with online payment gateway (PayDunya), an SMS notification module, and a secure portal for parents/guardians.',
       tech: ['PHP (CodeIgniter)', 'MySQL', 'PayDunya API', 'AJAX'],
     },
   ],
