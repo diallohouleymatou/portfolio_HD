@@ -70,6 +70,13 @@ type Project = {
   link?: string
 }
 
+type Certification = {
+  name: string
+  issuer: string
+  date: string
+  details: string
+}
+
 type Copy = {
   ui: Record<string, string>
   role: string
@@ -77,6 +84,7 @@ type Copy = {
   about: string[]
   work: Job[]
   projects: Project[]
+  certifications: Certification[]
   education: { school: string; degree: string; period: string }[]
   awards: { name: string; issuer: string; meta: string }[]
 }
@@ -86,6 +94,7 @@ const FR: Copy = {
     about: 'À propos',
     work: 'Parcours',
     projects: 'Projets',
+    certifications: 'Certifications',
     skills: 'Compétences',
     education: 'Formation',
     awards: 'Distinctions',
@@ -168,6 +177,26 @@ const FR: Copy = {
       tech: ['Vue 3', 'Chart.js', 'Pinia', 'Lucide'],
     },
   ],
+  certifications: [
+    {
+      name: 'Certificat Professionnel Google Cybersecurity',
+      issuer: 'Google (via Coursera)',
+      date: 'Août 2026',
+      details: 'Cybersécurité (9 cours) : Gestion des risques, Sécurité réseau, Linux & SQL, Détection/Réponse aux incidents, SIEM (Splunk/Chronicle), IDS & Automatisation Python. (ID : O4AKT1VP7SNU)',
+    },
+    {
+      name: 'Certificat Professionnel Google AI',
+      issuer: 'Google (via Coursera)',
+      date: 'Août 2026',
+      details: 'Spécialisation IA (7 cours) : Fondamentaux de l\'IA, Création d\'apps IA, Analyse de données, Prompt Engineering & 20+ artefacts. (ID : YRJ49W5Z4YOJ)',
+    },
+    {
+      name: 'Certificat de Formation en Intelligence Artificielle',
+      issuer: 'Fundación Ingenieros ICAI',
+      date: 'Juillet 2026',
+      details: 'Modèles génératifs, Traitement du Langage Naturel (NLP), architectures IA, API Python & garde-fous de sécurité.',
+    },
+  ],
   education: [
     {
       school: 'Dakar Institute of Technology',
@@ -194,6 +223,7 @@ const EN: Copy = {
     about: 'About',
     work: 'Experience',
     projects: 'Projects',
+    certifications: 'Certifications',
     skills: 'Skills',
     education: 'Education',
     awards: 'Awards',
@@ -273,6 +303,26 @@ const EN: Copy = {
       name: 'Agile Dashboard',
       description: 'Production agile tracking dashboard with integrated charts for managing internal IT projects at the Ministry.',
       tech: ['Vue 3', 'Chart.js', 'Pinia', 'Lucide'],
+    },
+  ],
+  certifications: [
+    {
+      name: 'Google Cybersecurity Professional Certificate',
+      issuer: 'Google (via Coursera)',
+      date: 'August 2026',
+      details: 'Cybersecurity (9 courses): Risk management, Network security, Linux & SQL, Incident detection/response, SIEM (Splunk/Chronicle), IDS & Python automation. (ID: O4AKT1VP7SNU)',
+    },
+    {
+      name: 'Google AI Professional Certificate',
+      issuer: 'Google (via Coursera)',
+      date: 'August 2026',
+      details: 'AI Specialization (7 courses): AI fundamentals, AI app creation, Data analysis, Prompt Engineering & 20+ artifacts. (ID: YRJ49W5Z4YOJ)',
+    },
+    {
+      name: 'Artificial Intelligence Training Certificate',
+      issuer: 'Fundación Ingenieros ICAI',
+      date: 'July 2026',
+      details: 'Generative models, Natural Language Processing (NLP), AI architectures, Python APIs & security guardrails.',
     },
   ],
   education: [

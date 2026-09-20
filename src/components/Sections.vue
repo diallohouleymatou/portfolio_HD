@@ -84,6 +84,18 @@ defineProps<{ resume: Resume }>()
       </li>
     </ol>
 
+    <p class="eyebrow spaced reveal">{{ resume.ui.certifications }}</p>
+    <ul class="certs">
+      <li v-for="cert in resume.certifications" :key="cert.name" class="reveal">
+        <div class="job-head">
+          <h3>{{ cert.name }}</h3>
+          <p class="meta">{{ cert.date }}</p>
+        </div>
+        <p class="company">{{ cert.issuer }}</p>
+        <p class="highlights" style="padding-left: 0;">{{ cert.details }}</p>
+      </li>
+    </ul>
+
     <p class="eyebrow spaced reveal">{{ resume.ui.awards }}</p>
     <ul class="certs">
       <li v-for="award in resume.awards" :key="award.name" class="reveal">
