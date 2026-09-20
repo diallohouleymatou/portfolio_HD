@@ -158,27 +158,27 @@ const FR: Copy = {
   projects: [
     {
       name: 'Planète 3 (Desktop)',
-      description: 'Application de bureau (macOS/Windows) hors-ligne pour la plateforme éducative majeure du Sénégal. Intègre la gestion des écoles, la synchronisation réseau des données et l\'authentification SSO Azure AD.',
+      description: 'Application de bureau macOS/Windows conçue pour fonctionner en environnement hors-ligne (Offline-first). Permet la gestion des établissements, des listes d\'élèves et la simulation de bulletins scolaires. Intègre un moteur de synchronisation réseau local et une authentification SSO Microsoft Azure AD.',
       tech: ['Flutter', 'Dart', 'Offline-First', 'Desktop'],
     },
     {
       name: 'SIREN-ED',
-      description: 'Système d\'Information ministériel de signalement et de suivi d\'événements pour le Ministère de l\'Éducation Nationale (MEN), avec navigation multi-vues et cartographie.',
+      description: 'Système d\'Information ministériel de signalement et de suivi d\'événements (MVP). Offre une création et un suivi d\'alertes en temps réel à travers des vues opérationnelles complexes (cartographie, messagerie, analytics, dashboard).',
       tech: ['Vue 3', 'Tailwind CSS', 'Vite', 'Vue Router'],
     },
     {
       name: 'Plateforme de Questionnaires (EduStat)',
-      description: 'Plateforme souveraine de collecte de données statistiques pour le Ministère de l\'Éducation Nationale (DPTIC), intégrant un concepteur de formulaires no-code.',
+      description: 'Plateforme souveraine de collecte de données statistiques pour la DPTIC. Permet aux agents non-techniciens de créer des enquêtes via une interface no-code, en garantissant que toutes les données sensibles (réponses et schémas) restent sur les serveurs maîtrisés du Ministère.',
       tech: ['React 18', 'SurveyJS', 'ASP.NET Core 8', 'SQL Server'],
     },
     {
       name: 'Gestion Salles MEN',
-      description: 'Application ministérielle de planification des salles de réunion du Ministère, sécurisée via authentification SSO (OpenID Connect).',
+      description: 'Système centralisé de planification et de réservation des salles de réunion du Ministère. Gère les plannings du 1er au 6e étage et s\'intègre directement à l\'infrastructure réseau de l\'État via une authentification SSO (OpenID Connect / SAML).',
       tech: ['Vue 3', 'TypeScript', 'Pinia', 'MongoDB'],
     },
     {
       name: 'Agile Dashboard',
-      description: 'Tableau de bord agile de production avec graphiques intégrés pour le pilotage et le suivi des projets de la DSI du Ministère.',
+      description: 'Tableau de bord interactif de production pour le pilotage des projets de la DSI. Inspiré du format tableau blanc, il offre un suivi précis par Sprint et par User Story avec des indicateurs visuels avancés et des graphiques intégrés.',
       tech: ['Vue 3', 'Chart.js', 'Pinia', 'Lucide'],
     },
   ],
@@ -291,27 +291,27 @@ const EN: Copy = {
   projects: [
     {
       name: 'Planète 3 (Desktop)',
-      description: 'Offline-first desktop application (macOS/Windows) for Senegal\'s major educational platform. Features school management, data synchronization, and Azure AD SSO authentication.',
+      description: 'Offline-first desktop application (macOS/Windows) designed for offline educational environments. Enables school management, student roster handling, and report card simulations with a local network sync engine and Microsoft Azure AD SSO.',
       tech: ['Flutter', 'Dart', 'Offline-First', 'Desktop'],
     },
     {
       name: 'SIREN-ED',
-      description: 'Ministerial Information System for event reporting and tracking for the Ministry of National Education (MEN), featuring mapping.',
+      description: 'Ministerial Information System MVP for event reporting and tracking. Provides real-time alert creation and monitoring through complex operational views including mapping, messaging, analytics, and dashboards.',
       tech: ['Vue 3', 'Tailwind CSS', 'Vite', 'Vue Router'],
     },
     {
       name: 'Questionnaire Platform (EduStat)',
-      description: 'Sovereign statistical data collection platform for the Ministry of National Education (DPTIC), integrating a no-code form builder.',
+      description: 'Sovereign statistical data collection platform for the DPTIC. Allows non-technical agents to build surveys via a no-code interface, ensuring all sensitive data (responses and schemas) remains securely on controlled Ministry servers.',
       tech: ['React 18', 'SurveyJS', 'ASP.NET Core 8', 'SQL Server'],
     },
     {
       name: 'MEN Meeting Rooms',
-      description: 'Ministerial meeting room planning and management application secured via SSO authentication (OpenID Connect).',
+      description: 'Centralized planning and booking system for Ministry meeting rooms. Manages schedules across six floors and integrates directly with the government\'s network infrastructure via SSO authentication (OpenID Connect / SAML).',
       tech: ['Vue 3', 'TypeScript', 'Pinia', 'MongoDB'],
     },
     {
       name: 'Agile Dashboard',
-      description: 'Production agile tracking dashboard with integrated charts for managing internal IT projects at the Ministry.',
+      description: 'Interactive production dashboard for IT project management. Inspired by whiteboard formats, it provides precise tracking per Sprint and User Story with advanced visual indicators and embedded charts.',
       tech: ['Vue 3', 'Chart.js', 'Pinia', 'Lucide'],
     },
   ],
