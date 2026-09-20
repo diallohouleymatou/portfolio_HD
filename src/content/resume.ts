@@ -149,22 +149,22 @@ const FR: Copy = {
   projects: [
     {
       name: 'SIREN-ED',
-      description: 'Plateforme de signalement et de suivi d\'événements (Système d\'Information) avec navigation multi-vues et cartographie.',
+      description: 'Système d\'Information ministériel de signalement et de suivi d\'événements pour le Ministère de l\'Éducation Nationale (MEN), avec navigation multi-vues et cartographie.',
       tech: ['Vue 3', 'Tailwind CSS', 'Vite', 'Vue Router'],
     },
     {
       name: 'Plateforme de Questionnaires (EduStat)',
-      description: 'Preuve de concept d\'une plateforme souveraine de collecte de données statistiques pour le Ministère (DPTIC) intégrant un concepteur de formulaires no-code.',
+      description: 'Plateforme souveraine de collecte de données statistiques pour le Ministère de l\'Éducation Nationale (DPTIC), intégrant un concepteur de formulaires no-code.',
       tech: ['React 18', 'SurveyJS', 'ASP.NET Core 8', 'SQL Server'],
     },
     {
       name: 'Gestion Salles MEN',
-      description: 'Application de planification et de gestion des salles de réunion avec authentification SSO (OpenID Connect).',
+      description: 'Application ministérielle de planification des salles de réunion du Ministère, sécurisée via authentification SSO (OpenID Connect).',
       tech: ['Vue 3', 'TypeScript', 'Pinia', 'MongoDB'],
     },
     {
       name: 'Agile Dashboard',
-      description: 'Prototype de tableau de bord agile (style tableau blanc Microsoft) avec graphiques intégrés pour le suivi de sprints.',
+      description: 'Tableau de bord agile de production avec graphiques intégrés pour le pilotage et le suivi des projets de la DSI du Ministère.',
       tech: ['Vue 3', 'Chart.js', 'Pinia', 'Lucide'],
     },
   ],
@@ -256,22 +256,22 @@ const EN: Copy = {
   projects: [
     {
       name: 'SIREN-ED',
-      description: 'Event reporting and tracking platform (Information System) featuring multi-view navigation and mapping.',
+      description: 'Ministerial Information System for event reporting and tracking for the Ministry of National Education (MEN), featuring mapping.',
       tech: ['Vue 3', 'Tailwind CSS', 'Vite', 'Vue Router'],
     },
     {
       name: 'Questionnaire Platform (EduStat)',
-      description: 'Proof of concept for a sovereign statistical data collection platform for the Ministry (DPTIC), integrating a no-code form builder.',
+      description: 'Sovereign statistical data collection platform for the Ministry of National Education (DPTIC), integrating a no-code form builder.',
       tech: ['React 18', 'SurveyJS', 'ASP.NET Core 8', 'SQL Server'],
     },
     {
       name: 'MEN Meeting Rooms',
-      description: 'Meeting room planning and management application featuring SSO authentication (OpenID Connect).',
+      description: 'Ministerial meeting room planning and management application secured via SSO authentication (OpenID Connect).',
       tech: ['Vue 3', 'TypeScript', 'Pinia', 'MongoDB'],
     },
     {
       name: 'Agile Dashboard',
-      description: 'Agile dashboard prototype (Microsoft Whiteboard style) with integrated charts for sprint tracking.',
+      description: 'Production agile tracking dashboard with integrated charts for managing internal IT projects at the Ministry.',
       tech: ['Vue 3', 'Chart.js', 'Pinia', 'Lucide'],
     },
   ],
