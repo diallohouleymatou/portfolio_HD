@@ -42,6 +42,28 @@ defineProps<{ resume: Resume }>()
     </ol>
   </section>
 
+  <section class="section" id="projects">
+    <p class="eyebrow reveal">{{ resume.ui.projects }}</p>
+    <div class="timeline">
+      <div v-for="project in resume.projects" :key="project.name" class="job reveal">
+        <div class="job-head">
+          <h3>
+            {{ project.name }}
+          </h3>
+          <p v-if="project.link" class="meta">
+            <a :href="project.link" target="_blank" rel="noopener">Lien ↗</a>
+          </p>
+        </div>
+        <p class="highlights" style="padding-left: 0;">{{ project.description }}</p>
+        <ul class="tags" style="margin-top: 1rem;">
+          <li v-for="tech in project.tech" :key="tech" style="font-size: 0.85rem; padding: 0.3rem 0.8rem;">
+            {{ tech }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="skills">
     <p class="eyebrow reveal">{{ resume.ui.skills }}</p>
     <ul class="tags reveal">

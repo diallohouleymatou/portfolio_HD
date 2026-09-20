@@ -96,6 +96,7 @@ onBeforeUnmount(() => {
   <nav class="nav">
     <a href="#about">{{ resume.ui.about }}</a>
     <a href="#work">{{ resume.ui.work }}</a>
+    <a href="#projects">{{ resume.ui.projects }}</a>
     <a href="#skills">{{ resume.ui.skills }}</a>
     <a href="#contact">{{ resume.ui.contact }}</a>
   </nav>

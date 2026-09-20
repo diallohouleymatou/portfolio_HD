@@ -63,12 +63,20 @@ type Job = {
   highlights: string[]
 }
 
+type Project = {
+  name: string
+  description: string
+  tech: string[]
+  link?: string
+}
+
 type Copy = {
   ui: Record<string, string>
   role: string
   summary: string
   about: string[]
   work: Job[]
+  projects: Project[]
   education: { school: string; degree: string; period: string }[]
   awards: { name: string; issuer: string; meta: string }[]
 }
@@ -77,6 +85,7 @@ const FR: Copy = {
   ui: {
     about: 'À propos',
     work: 'Parcours',
+    projects: 'Projets',
     skills: 'Compétences',
     education: 'Formation',
     awards: 'Distinctions',
@@ -137,6 +146,28 @@ const FR: Copy = {
       ],
     },
   ],
+  projects: [
+    {
+      name: 'RAMATU',
+      description: 'Plateforme institutionnelle e-learning pour la gestion et le suivi de la formation éducative.',
+      tech: ['E-learning', 'Architecture', 'Gestion de projet'],
+    },
+    {
+      name: 'Siren-ED',
+      description: 'Système d\'information (Frontend et Backend) pour l\'Éducation Nationale, avec intégration d\'authentification Azure MSAL.',
+      tech: ['Vue.js', 'TailwindCSS', 'Azure'],
+    },
+    {
+      name: 'EduStat',
+      description: 'Application web et mobile de statistiques et d\'analyse des données de l\'éducation.',
+      tech: ['Vue.js', 'Mobile', 'Data'],
+    },
+    {
+      name: 'Agile Dashboard',
+      description: 'Tableau de bord de suivi agile couplé à une API dédiée pour le pilotage des projets internes.',
+      tech: ['Frontend', 'API REST', 'Dashboard'],
+    },
+  ],
   education: [
     {
       school: 'Dakar Institute of Technology',
@@ -162,6 +193,7 @@ const EN: Copy = {
   ui: {
     about: 'About',
     work: 'Experience',
+    projects: 'Projects',
     skills: 'Skills',
     education: 'Education',
     awards: 'Awards',
@@ -219,6 +251,28 @@ const EN: Copy = {
       highlights: [
         'Took part in designing and implementing full-stack solutions to modernise existing systems.',
       ],
+    },
+  ],
+  projects: [
+    {
+      name: 'RAMATU',
+      description: 'Institutional e-learning platform for managing and monitoring educational training.',
+      tech: ['E-learning', 'Architecture', 'Project Management'],
+    },
+    {
+      name: 'Siren-ED',
+      description: 'Information system (Frontend and Backend) for the National Education Ministry, featuring Azure MSAL authentication.',
+      tech: ['Vue.js', 'TailwindCSS', 'Azure'],
+    },
+    {
+      name: 'EduStat',
+      description: 'Web and mobile application for education data statistics and analysis.',
+      tech: ['Vue.js', 'Mobile', 'Data'],
+    },
+    {
+      name: 'Agile Dashboard',
+      description: 'Agile tracking dashboard coupled with a dedicated API for internal project management.',
+      tech: ['Frontend', 'REST API', 'Dashboard'],
     },
   ],
   education: [

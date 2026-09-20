@@ -47,8 +47,8 @@ const LAVENDER = new THREE.Color()
 export type Theme = 'dark' | 'light'
 
 const THEMES = {
-  dark: { pink: '#2dd4bf', lavender: '#99f6e4', blending: THREE.NormalBlending },
-  light: { pink: '#0f766e', lavender: '#0d9488', blending: THREE.NormalBlending },
+  dark: { pink: '#ff9ec0', lavender: '#b9a4f0', blending: THREE.NormalBlending },
+  light: { pink: '#ff8fb8', lavender: '#b39cf5', blending: THREE.NormalBlending },
 }
 
 /** Camera positions the scroll interpolates between, one per page section. */
