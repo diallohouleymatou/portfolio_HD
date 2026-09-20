@@ -157,6 +157,11 @@ const FR: Copy = {
   ],
   projects: [
     {
+      name: 'Planète 3 (Desktop)',
+      description: 'Application de bureau (macOS/Windows) hors-ligne pour la plateforme éducative majeure du Sénégal. Intègre la gestion des écoles, la synchronisation réseau des données et l\'authentification SSO Azure AD.',
+      tech: ['Flutter', 'Dart', 'Offline-First', 'Desktop'],
+    },
+    {
       name: 'SIREN-ED',
       description: 'Système d\'Information ministériel de signalement et de suivi d\'événements pour le Ministère de l\'Éducation Nationale (MEN), avec navigation multi-vues et cartographie.',
       tech: ['Vue 3', 'Tailwind CSS', 'Vite', 'Vue Router'],
@@ -284,6 +289,11 @@ const EN: Copy = {
     },
   ],
   projects: [
+    {
+      name: 'Planète 3 (Desktop)',
+      description: 'Offline-first desktop application (macOS/Windows) for Senegal\'s major educational platform. Features school management, data synchronization, and Azure AD SSO authentication.',
+      tech: ['Flutter', 'Dart', 'Offline-First', 'Desktop'],
+    },
     {
       name: 'SIREN-ED',
       description: 'Ministerial Information System for event reporting and tracking for the Ministry of National Education (MEN), featuring mapping.',
