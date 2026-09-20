@@ -1,7 +1,44 @@
 import * as THREE from 'three'
 
-import particlesFragment from './shaders/particles/fragment.glsl'
-import particlesVertex from './shaders/particles/vertex.glsl'
+const particlesFragment = `
+uniform vec3 uColor;
+uniform vec3 uColor2;
+
+varying float vAlpha;
+varying float vMix;
+
+void main() {
+  float d = length(gl_PointCoord - 0.5);
+  if (d > 0.5) discard;
+  gl_FragColor = vec4(mix(uColor, uColor2, vMix), 0.55 * vAlpha);
+}
+`
+
+const particlesVertex = `
+uniform float uTime;
+uniform float uPixelRatio;
+uniform float uSize;
+
+attribute float aScale;
+attribute float aSpeed;
+
+varying float vAlpha;
+varying float vMix;
+
+void main() {
+  vec3 transformed = position;
+  transformed.y = mod(transformed.y + uTime * aSpeed, 24.0) - 12.0;
+  transformed.x += sin(uTime * 0.25 + position.z * 0.6) * 0.35;
+  transformed.z += cos(uTime * 0.2 + position.x * 0.6) * 0.35;
+
+  vec4 mvPosition = modelViewMatrix * vec4(transformed, 1.0);
+  gl_Position = projectionMatrix * mvPosition;
+  gl_PointSize = uSize * aScale * uPixelRatio * (12.0 / -mvPosition.z);
+
+  vAlpha = smoothstep(12.0, 3.0, abs(transformed.y)) * aScale;
+  vMix = fract(aScale * 7.0);
+}
+`
 
 const PARTICLE_COUNT = 90
 const PINK = new THREE.Color()
@@ -10,8 +47,8 @@ const LAVENDER = new THREE.Color()
 export type Theme = 'dark' | 'light'
 
 const THEMES = {
-  dark: { pink: '#ff9ec0', lavender: '#b9a4f0', blending: THREE.NormalBlending },
-  light: { pink: '#ff8fb8', lavender: '#b39cf5', blending: THREE.NormalBlending },
+  dark: { pink: '#2dd4bf', lavender: '#99f6e4', blending: THREE.NormalBlending },
+  light: { pink: '#0f766e', lavender: '#0d9488', blending: THREE.NormalBlending },
 }
 
 /** Camera positions the scroll interpolates between, one per page section. */

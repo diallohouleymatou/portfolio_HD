@@ -1,9 +1,9 @@
 import Icon0 from '~icons/simple-icons/python'
 import Icon1 from '~icons/simple-icons/flask'
 import Icon2 from '~icons/simple-icons/flutter'
-import Icon3 from '~icons/simple-icons/vuedotjs'
+import Icon3 from '~icons/simple-icons/laravel'
 import Icon4 from '~icons/simple-icons/angular'
-import Icon5 from '~icons/simple-icons/springboot'
+import Icon5 from '~icons/simple-icons/react'
 import Icon6 from '~icons/simple-icons/nodedotjs'
 import Icon7 from '~icons/simple-icons/openjdk'
 import Icon8 from '~icons/simple-icons/odoo'
@@ -15,8 +15,8 @@ import Icon13 from '~icons/simple-icons/git'
 import Icon14 from '~icons/lucide/workflow'
 import Icon15 from '~icons/lucide/database'
 import Icon16 from '~icons/simple-icons/pandas'
-import Icon17 from '~icons/simple-icons/scikitlearn'
-import Icon18 from '~icons/simple-icons/digitalocean'
+import Icon17 from '~icons/simple-icons/numpy'
+import Icon18 from '~icons/simple-icons/uml'
 
 export const locales = ['fr', 'en'] as const
 export type Locale = (typeof locales)[number]
@@ -26,31 +26,32 @@ export function isLocale(value: string): value is Locale {
 }
 
 export const CONTACT = {
-  email: 'atidiane741@gmail.com',
-  phone: '+221 78 170 61 84',
-  github: 'https://github.com/atidiane741',
-  linkedin: 'https://www.linkedin.com/in/cheikh-ahmed-tijani-traore',
+  email: 'dhouleymatou150@gmail.com',
+  phone: '+221 78 277 55 79',
+  github: 'https://github.com/diallohouleymatou',
+  linkedin: 'https://www.linkedin.com/in/houleymatou-diallo-ba76782b7',
 }
 
 export const SKILLS = [
   { name: 'Python', icon: Icon0 },
-  { name: 'Spring Boot', icon: Icon5 },
+  { name: 'Flask', icon: Icon1 },
   { name: 'Flutter', icon: Icon2 },
-  { name: 'Vue.js', icon: Icon3 },
+  { name: 'Laravel', icon: Icon3 },
   { name: 'Angular', icon: Icon4 },
+  { name: 'React', icon: Icon5 },
   { name: 'Node.js', icon: Icon6 },
   { name: 'Java', icon: Icon7 },
   { name: 'Odoo', icon: Icon8 },
   { name: 'Docker', icon: Icon9 },
   { name: 'Terraform', icon: Icon10 },
   { name: 'Azure', icon: Icon11 },
-  { name: 'DigitalOcean', icon: Icon18 },
   { name: 'Linux', icon: Icon12 },
   { name: 'Git', icon: Icon13 },
   { name: 'CI/CD', icon: Icon14 },
-  { name: 'Databases', icon: Icon15 },
+  { name: 'SQL', icon: Icon15 },
   { name: 'Pandas', icon: Icon16 },
-  { name: 'Scikit-learn', icon: Icon17 },
+  { name: 'NumPy', icon: Icon17 },
+  { name: 'UML', icon: Icon18 },
 ]
 
 type Job = {
@@ -75,86 +76,84 @@ type Copy = {
 const FR: Copy = {
   ui: {
     about: 'À propos',
-    work: 'Expériences',
+    work: 'Parcours',
     skills: 'Compétences',
     education: 'Formation',
-    awards: 'Projets',
+    awards: 'Distinctions',
     contact: 'Contact',
     contactTitle: 'Parlons-en',
-    contactLead: 'Consultance technique, intégration Odoo, ou développement sur-mesure (Web, Mobile, Backend).',
+    contactLead: 'Application métier, modernisation d’un système existant ou projet Odoo : décrivez votre besoin.',
     downloadCv: 'Télécharger le CV',
     rights: 'Tous droits réservés.',
     current: 'En cours',
   },
-  role: 'Fullstack Developer & Consultant Technique',
-  summary: 'Développeur Full-stack et Consultant avec une expertise en backend, DevOps et intégration Odoo.',
+  role: 'Développeuse full-stack',
+  summary:
+    'Je conçois des applications fiables à partir des besoins métier, de la conception à la mise en production.',
   about: [
-    'Consultant technique et développeur full-stack expérimenté basé à Dakar.',
-    'J’interviens sur la conception d’architectures, le développement (Spring Boot, Vue.js, Flutter) et les infrastructures (Docker, Azure).',
-    'Top committer au Sénégal, passionné par la performance, la sécurité et la qualité logicielle.'
+    'Développeuse full-stack et conceptrice de logiciels, spécialisée dans l’analyse des besoins métier, la conception de solutions applicatives fiables et l’évolution de systèmes à fort enjeu opérationnel.',
+    'J’interviens sur l’ensemble du cycle de développement, avec une approche structurée, orientée qualité, sécurité et performance.',
   ],
   work: [
     {
-      company: 'LIC',
-      title: 'Fullstack Developer',
-      period: 'En cours',
+      company: 'SIMEN',
+      title: 'Agente développeuse full-stack',
+      period: 'Depuis février 2026',
       location: 'Dakar, Sénégal',
       current: true,
       highlights: [
-        'Conception et développement web.',
-        'Mise en place d’interfaces avec Nuxt 3, GSAP et Tailwind.',
+        'Développe et fait évoluer des applications métiers au sein du Système d’Information et de Management de l’Éducation Nationale (CDD à temps plein).',
+        'Contribue à la modernisation des systèmes existants : bonnes pratiques de développement, structuration technique et amélioration continue.',
       ],
     },
     {
-      company: 'G&G Professional Services',
-      title: 'Consultant Informatique & Analyste SOC',
-      period: 'En cours',
+      company: 'Megatic',
+      title: 'Développeuse de logiciels',
+      period: 'Depuis novembre 2025',
+      location: 'Remote / Dakar, Sénégal',
+      current: true,
+      highlights: [
+        'Participe au développement d’une application de gestion scolaire : classes, élèves, enseignants, notes et bulletins.',
+        'Collabore à distance sur l’implémentation de fonctionnalités, les tests et l’amélioration de l’expérience utilisateur.',
+      ],
+    },
+    {
+      company: 'Stellar Consulting',
+      title: 'Consultante informatique',
+      period: 'Novembre 2025 – janvier 2026',
       location: 'Dakar, Sénégal',
-      current: true,
       highlights: [
-        'Développement et personnalisation de modules Odoo (Python API).',
-        'Gestion d’infrastructures, sécurité (Microsoft 365, SOC, MFA) et durcissement des systèmes.',
+        'A développé et personnalisé des solutions Odoo adaptées aux besoins métiers des clients.',
+        'A supervisé l’infrastructure informatique et optimisé les usages des outils Microsoft 365.',
       ],
     },
     {
-      company: 'Teksi Inc',
-      title: 'Backend & DevOps Junior',
-      period: 'En cours',
-      location: 'Montréal, Canada (Remote)',
-      current: true,
+      company: 'SIMEN',
+      title: 'Développeuse de logiciels',
+      period: 'Octobre 2025 – novembre 2025',
+      location: 'Dakar, Sénégal',
       highlights: [
-        'Développement backend avec SpringBoot pour la plateforme SaaS Copak.',
-        'Intégration continue et déploiement avec Docker et DigitalOcean.',
+        'A participé à la conception et à l’implémentation de solutions full-stack destinées à la modernisation de systèmes existants.',
       ],
     },
   ],
   education: [
     {
-      school: 'Institut Supérieur d’Informatique (ISI)',
-      degree: 'Licence en Génie Logiciel',
-      period: '2023 – 2025',
+      school: 'Dakar Institute of Technology',
+      degree: 'Master en intelligence artificielle',
+      period: 'Depuis mars 2026',
     },
     {
-      school: 'Lycée Ba Souley (Mauritanie)',
-      degree: 'Baccalauréat Scientifique',
-      period: '2018',
+      school: 'Institut Supérieur d’Informatique',
+      degree: 'Licence en génie logiciel',
+      period: 'Janvier 2023 – septembre 2025',
     },
   ],
   awards: [
     {
-      name: 'Koala',
-      issuer: 'Finance Management App',
-      meta: 'Application de gestion financière axée sur la vie privée. Machine learning sur appareil, Flutter, Python.',
-    },
-    {
-      name: 'Gnawalma',
-      issuer: 'Tailor Shop App',
-      meta: 'Application Flutter, Firebase, NestJs avec architecture offline-first.',
-    },
-    {
-      name: 'Jenv CLI',
-      issuer: 'Outil Cross-Platform',
-      meta: 'Outil de gestion des versions JDK développé en Python.',
+      name: 'Certificat d’excellence',
+      issuer: 'Institut Supérieur d’Informatique',
+      meta: 'Performances académiques remarquables en Licence 3 Génie Logiciel',
     },
   ],
 }
@@ -165,83 +164,80 @@ const EN: Copy = {
     work: 'Experience',
     skills: 'Skills',
     education: 'Education',
-    awards: 'Projects',
+    awards: 'Awards',
     contact: 'Contact',
     contactTitle: 'Get in touch',
-    contactLead: 'Technical consulting, Odoo integration, or custom development (Web, Mobile, Backend).',
+    contactLead: 'Business application, legacy system modernisation or Odoo project: describe what you need.',
     downloadCv: 'Download CV',
     rights: 'All rights reserved.',
     current: 'Current',
   },
-  role: 'Fullstack Developer & Technical Consultant',
-  summary: 'Full-stack Developer and Consultant with expertise in backend, DevOps, and Odoo integration.',
+  role: 'Full-stack developer',
+  summary: 'I design reliable applications from business needs, from design to production.',
   about: [
-    'Technical consultant and experienced full-stack developer based in Dakar.',
-    'I focus on architectural design, development (Spring Boot, Vue.js, Flutter), and infrastructure (Docker, Azure).',
-    'Top committer in Senegal, passionate about performance, security, and software quality.'
+    'Full-stack developer and software designer, specialised in business requirements analysis, reliable application design and the evolution of systems with high operational stakes.',
+    'I work across the whole development cycle with a structured approach focused on quality, security and performance.',
   ],
   work: [
     {
-      company: 'LIC',
-      title: 'Fullstack Developer',
-      period: 'Current',
+      company: 'SIMEN',
+      title: 'Full-stack developer',
+      period: 'Since February 2026',
       location: 'Dakar, Senegal',
       current: true,
       highlights: [
-        'Web design and development.',
-        'Building interfaces with Nuxt 3, GSAP, and Tailwind.',
+        'Builds and evolves business applications within the Education Ministry’s Information and Management System (full-time fixed-term contract).',
+        'Contributes to modernising existing systems: development best practices, technical structure and continuous improvement.',
       ],
     },
     {
-      company: 'G&G Professional Services',
-      title: 'IT Consultant & SOC Analyst',
-      period: 'Current',
+      company: 'Megatic',
+      title: 'Software developer',
+      period: 'Since November 2025',
+      location: 'Remote / Dakar, Senegal',
+      current: true,
+      highlights: [
+        'Contributes to a school management application covering classes, students, teachers, grades and report cards.',
+        'Works remotely with the team on feature implementation, testing and user experience improvements.',
+      ],
+    },
+    {
+      company: 'Stellar Consulting',
+      title: 'IT consultant',
+      period: 'November 2025 – January 2026',
       location: 'Dakar, Senegal',
-      current: true,
       highlights: [
-        'Development and customization of Odoo modules (Python API).',
-        'Infrastructure management, security (Microsoft 365, SOC, MFA), and system hardening.',
+        'Developed and customised Odoo solutions tailored to client business needs.',
+        'Supervised IT infrastructure and optimised the use of Microsoft 365 tools.',
       ],
     },
     {
-      company: 'Teksi Inc',
-      title: 'Backend & DevOps Junior',
-      period: 'Current',
-      location: 'Montreal, Canada (Remote)',
-      current: true,
+      company: 'SIMEN',
+      title: 'Software developer',
+      period: 'October 2025 – November 2025',
+      location: 'Dakar, Senegal',
       highlights: [
-        'Backend development with SpringBoot for the Copak SaaS platform.',
-        'Continuous integration and deployment with Docker and DigitalOcean.',
+        'Took part in designing and implementing full-stack solutions to modernise existing systems.',
       ],
     },
   ],
   education: [
     {
-      school: 'Institut Supérieur d’Informatique (ISI)',
-      degree: 'Bachelor in Software Engineering',
-      period: '2023 – 2025',
+      school: 'Dakar Institute of Technology',
+      degree: 'Master’s in Artificial Intelligence',
+      period: 'Since March 2026',
     },
     {
-      school: 'Lycée Ba Souley (Mauritania)',
-      degree: 'Scientific Baccalaureate',
-      period: '2018',
+      school: 'Institut Supérieur d’Informatique',
+      degree: 'Bachelor’s in Software Engineering',
+      period: 'January 2023 – September 2025',
     },
   ],
   awards: [
     {
-      name: 'Koala',
-      issuer: 'Finance Management App',
-      meta: 'Privacy-focused financial management app. On-device machine learning, Flutter, Python.',
-    },
-    {
-      name: 'Gnawalma',
-      issuer: 'Tailor Shop App',
-      meta: 'Flutter, Firebase, and NestJs app with offline-first architecture.',
-    },
-    {
-      name: 'Jenv CLI',
-      issuer: 'Cross-Platform Tool',
-      meta: 'JDK version management tool built with Python.',
+      name: 'Certificate of excellence',
+      issuer: 'Institut Supérieur d’Informatique',
+      meta: 'Outstanding academic performance in the third year of the Software Engineering degree',
     },
   ],
 }
@@ -249,7 +245,7 @@ const EN: Copy = {
 const COPY: Record<Locale, Copy> = { fr: FR, en: EN }
 
 export const PROFILE = {
-  name: 'Cheikh A. Tijani Traore',
+  name: 'Houleymatou Diallo',
   location: 'Dakar, Sénégal',
   cv: '/cv.pdf',
 }

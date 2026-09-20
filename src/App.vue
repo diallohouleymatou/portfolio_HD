@@ -45,25 +45,43 @@ onMounted(() => {
   document.documentElement.lang = locale.value
   if (!canvas.value) return
 
-  experience.value = createExperience(canvas.value)
-  applyTheme()
+  try {
+    const dummyCanvas = document.createElement('canvas');
+    const gl = dummyCanvas.getContext('webgl2') || dummyCanvas.getContext('webgl');
+    if (!gl) {
+      document.body.classList.add('no-webgl');
+      throw new Error("Your browser does not support WebGL or it is disabled.");
+    }
+    
+    experience.value = createExperience(canvas.value)
+    applyTheme()
+  } catch (error: any) {
+    console.error('Failed to initialize 3D experience:', error)
+  }
 
   const instance = new Lenis({ autoRaf: true, lerp: 0.1, anchors: true })
   instance.on('scroll', ({ progress }: { progress: number }) => experience.value?.setScroll(progress))
   lenis.value = instance
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible')
-          observer.unobserve(entry.target)
+  setTimeout(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+            observer.unobserve(entry.target)
+          }
         }
-      }
-    },
-    { rootMargin: '-12% 0px' },
-  )
-  document.querySelectorAll('.reveal').forEach((element) => observer.observe(element))
+      },
+      { rootMargin: '-12% 0px' },
+    )
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element))
+    
+    // Fallback: forcefully show elements if observer fails
+    if (document.querySelectorAll('.reveal').length === 0) {
+      console.warn('No .reveal elements found')
+    }
+  }, 100)
 })
 
 onBeforeUnmount(() => {
