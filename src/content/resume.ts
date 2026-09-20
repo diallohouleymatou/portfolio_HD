@@ -129,7 +129,7 @@ const FR: Copy = {
     },
     {
       company: 'SIMEN',
-      title: 'Développeuse de logiciels',
+      title: 'Stagiaire développeuse de logiciels',
       period: 'Octobre 2025 – novembre 2025',
       location: 'Dakar, Sénégal',
       highlights: [
@@ -213,7 +213,7 @@ const EN: Copy = {
     },
     {
       company: 'SIMEN',
-      title: 'Software developer',
+      title: 'Software developer intern',
       period: 'October 2025 – November 2025',
       location: 'Dakar, Senegal',
       highlights: [
