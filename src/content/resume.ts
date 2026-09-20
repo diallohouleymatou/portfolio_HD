@@ -157,6 +157,11 @@ const FR: Copy = {
   ],
   projects: [
     {
+      name: 'RAMATU (PWA)',
+      description: 'Plateforme Nationale d\'E-Learning et de Continuité Pédagogique (PWA Offline-First) pour le Ministère. Intègre la création de cours, les activités interactives H5P, la correction de devoirs et des parcours de remédiation automatisés avec un fonctionnement 100% hors-ligne.',
+      tech: ['PWA', 'Offline-First', 'E-Learning', 'Azure Entra ID'],
+    },
+    {
       name: 'Planète 3 (Desktop)',
       description: 'Application de bureau macOS/Windows conçue pour fonctionner en environnement hors-ligne (Offline-first). Permet la gestion des établissements, des listes d\'élèves et la simulation de bulletins scolaires. Intègre un moteur de synchronisation réseau local et une authentification SSO Microsoft Azure AD.',
       tech: ['Flutter', 'Dart', 'Offline-First', 'Desktop'],
@@ -289,6 +294,11 @@ const EN: Copy = {
     },
   ],
   projects: [
+    {
+      name: 'RAMATU (PWA)',
+      description: 'National E-Learning and Educational Continuity Platform (Offline-First PWA) for the Ministry. Features course creation, interactive H5P activities, assignment grading, and automated remediation paths with a full 100% offline mode.',
+      tech: ['PWA', 'Offline-First', 'E-Learning', 'Azure Entra ID'],
+    },
     {
       name: 'Planète 3 (Desktop)',
       description: 'Offline-first desktop application (macOS/Windows) designed for offline educational environments. Enables school management, student roster handling, and report card simulations with a local network sync engine and Microsoft Azure AD SSO.',
