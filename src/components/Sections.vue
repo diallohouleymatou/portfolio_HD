@@ -190,6 +190,16 @@ defineProps<{ resume: Resume }>()
   border-radius: 2rem;
   background: var(--card);
   box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 158, 192, 0.1);
+    border-color: rgba(255, 158, 192, 0.25);
+  }
 }
 
 .job-head {
@@ -261,12 +271,18 @@ defineProps<{ resume: Resume }>()
     border-radius: 999px;
     background: var(--card);
     box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     font-size: 1.05rem;
     font-weight: 800;
-    transition: transform 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     &:hover {
-      transform: translateY(-3px) rotate(-1.5deg);
+      transform: translateY(-4px) scale(1.03) rotate(-1.5deg);
+      border-color: rgba(255, 158, 192, 0.3);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 12px rgba(255, 158, 192, 0.15);
+      color: var(--accent);
     }
   }
 
