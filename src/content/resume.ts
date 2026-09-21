@@ -120,8 +120,9 @@ const FR: Copy = {
       location: 'Dakar, Sénégal',
       current: true,
       highlights: [
-        'Développe et fait évoluer des applications métiers au sein du Système d’Information et de Management de l’Éducation Nationale (CDD à temps plein).',
-        'Contribue à la modernisation des systèmes existants : bonnes pratiques de développement, structuration technique et amélioration continue.',
+        'Développe le Système d\'Information et de Management de l\'Éducation Nationale, touchant des milliers d\'établissements.',
+        'Pilote et participe au développement de plateformes d\'État majeures (RAMATU, Planète 3, SIREN-ED, EduStat).',
+        'Met en place des architectures avancées (Offline-First en Flutter/PWA, SSO Azure Entra ID) et des pipelines CI/CD.',
       ],
     },
     {
@@ -131,8 +132,9 @@ const FR: Copy = {
       location: 'Remote / Dakar, Sénégal',
       current: true,
       highlights: [
-        'Participe au développement d’une application de gestion scolaire : classes, élèves, enseignants, notes et bulletins.',
-        'Collabore à distance sur l’implémentation de fonctionnalités, les tests et l’amélioration de l’expérience utilisateur.',
+        'Développe GS-Académie, une application SaaS complète de gestion scolaire.',
+        'Intègre des passerelles de paiement (PayDunya) pour la facturation et des modules d\'envoi automatique de SMS.',
+        'Implémente des interfaces fluides via AJAX et collabore en méthodologie agile (tests, retours utilisateurs).',
       ],
     },
     {
@@ -141,8 +143,8 @@ const FR: Copy = {
       period: 'Novembre 2025 – janvier 2026',
       location: 'Dakar, Sénégal',
       highlights: [
-        'A développé et personnalisé des solutions Odoo adaptées aux besoins métiers des clients.',
-        'A supervisé l’infrastructure informatique et optimisé les usages des outils Microsoft 365.',
+        'Développement et personnalisation de modules Odoo ERP pour répondre précisément aux processus métiers des clients.',
+        'Supervision de l\'infrastructure IT, déploiement et optimisation des solutions cloud Microsoft 365.',
       ],
     },
     {
@@ -151,7 +153,8 @@ const FR: Copy = {
       period: 'Octobre 2025 – novembre 2025',
       location: 'Dakar, Sénégal',
       highlights: [
-        'A participé à la conception et à l’implémentation de solutions full-stack destinées à la modernisation de systèmes existants.',
+        'Phase de conception initiale et prototypage d\'outils internes et de tableaux de bord (Agile Dashboard).',
+        'Montée en compétence rapide sur les stacks ministérielles et intégration aux équipes de développement.',
       ],
     },
   ],
@@ -263,8 +266,9 @@ const EN: Copy = {
       location: 'Dakar, Senegal',
       current: true,
       highlights: [
-        'Builds and evolves business applications within the Education Ministry’s Information and Management System (full-time fixed-term contract).',
-        'Contributes to modernising existing systems: development best practices, technical structure and continuous improvement.',
+        'Develops the National Education Ministry\'s Information and Management System, impacting thousands of schools.',
+        'Leads and contributes to the development of major state platforms (RAMATU, Planète 3, SIREN-ED, EduStat).',
+        'Implements advanced architectures (Offline-First in Flutter/PWA, Azure Entra ID SSO) and CI/CD pipelines.',
       ],
     },
     {
@@ -274,8 +278,9 @@ const EN: Copy = {
       location: 'Remote / Dakar, Senegal',
       current: true,
       highlights: [
-        'Contributes to a school management application covering classes, students, teachers, grades and report cards.',
-        'Works remotely with the team on feature implementation, testing and user experience improvements.',
+        'Develops GS-Académie, a comprehensive SaaS school management application.',
+        'Integrates payment gateways (PayDunya) for billing and automated SMS notification modules.',
+        'Implements fluid interfaces via AJAX and collaborates using agile methodologies (testing, user feedback).',
       ],
     },
     {
@@ -284,8 +289,8 @@ const EN: Copy = {
       period: 'November 2025 – January 2026',
       location: 'Dakar, Senegal',
       highlights: [
-        'Developed and customised Odoo solutions tailored to client business needs.',
-        'Supervised IT infrastructure and optimised the use of Microsoft 365 tools.',
+        'Developed and customized Odoo ERP modules to accurately meet client business processes.',
+        'Supervised IT infrastructure, deployed and optimized Microsoft 365 cloud solutions.',
       ],
     },
     {
@@ -294,7 +299,8 @@ const EN: Copy = {
       period: 'October 2025 – November 2025',
       location: 'Dakar, Senegal',
       highlights: [
-        'Took part in designing and implementing full-stack solutions to modernise existing systems.',
+        'Initial design phase and prototyping of internal tools and dashboards (Agile Dashboard).',
+        'Rapidly upskilled on ministerial tech stacks and integrated into development teams.',
       ],
     },
   ],
